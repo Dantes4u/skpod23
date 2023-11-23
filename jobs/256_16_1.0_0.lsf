@@ -1,0 +1,7 @@
+#BSUB -n 2
+#BSUB -x
+#BSUB -W 00:30
+#BSUB -o "output/256_16_1.0_0.out"
+#BSUB -e "tmp.err"
+#BSUB -R "span[hosts=1]"
+OMP_NUM_THREADS=16 ./omp 1.0 1.0 1.0 256 0.5 50
