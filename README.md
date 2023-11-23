@@ -16,7 +16,7 @@ xlC_r -o omp myomp.cpp -qsmp=omp
 `
 g++ main.cpp -o main
 `
-#### Запуск программы
+#### Запуск программы (Lx, Ly, Lz, N, T, K)
 `
-./main 1.0 1.0 1.0 128 0.5 50 // Lx, Ly, Lz, N, T, K
+./main 1.0 1.0 1.0 128 0.5 50
 `
