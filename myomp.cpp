@@ -108,8 +108,7 @@ public:
         double dz = numerical.getDz();
         
         std::vector<double> errors;
-        errors.reserve((N+1) * (N+1) * (N+1));  // Резервируем место для всех ошибок
-        
+        errors.reserve((N+1) * (N+1) * (N+1));        
         double max_error = 0.0;
         double error_sum = 0.0;
         double error = 0.0;
@@ -149,7 +148,6 @@ int main(int argc, char* argv[]) {
     int N = atoi(argv[4]);
     double T = atof(argv[5]);
     int n_steps = atoi(argv[6]);
-    // Создаем сетки
     Grid current(Lx, Ly, Lz, N);
     Grid next(Lx, Ly, Lz, N);
     Grid previous(Lx, Ly, Lz, N);
